@@ -1,12 +1,20 @@
 
 import './App.css';
-import Login from './pages/Login'
+import Header from './components/header';
+import Footer from './components/Footer';
+import { Container } from 'react-bootstrap';
 function App() {
   return (
     <div className="App">
-      <Login />
+      <Header />
+      <main>
+        <Container>
+          <h1>This is our home page</h1>
+        </Container>
+      </main>
+      <Footer />
     </div>
   );
 }
 
-export default App;
+
